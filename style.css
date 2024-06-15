@@ -1,0 +1,431 @@
+*{
+    box-sizing: border-box;
+}
+.titan-one-regular {
+    font-family: "Titan One", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+  }
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+#button {
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 4px;
+    text-shadow: 1px 1px 15px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    padding: 5px 20px;
+    border: solid #000000 1px;
+    text-decoration: none;
+    width: 25%;
+  }
+
+
+
+
+
+
+html{
+    font-family:  "Titan One", sans-serif;
+    font-size: 25px;
+   /*  background-color: #fdcae1a9; */
+   background-color: #ebe7e942;
+  /*   margin: 1%; */
+     
+}
+body{
+    background-image: url(images/desayunopruebafondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 ;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-attachment: fixed;/* esto lo usamos para que la imagen se quede quieta en el fondo y podamos mover la letras o todo el contenido sin mover el fondo */
+}
+header,footer{  
+color:  rgb(145, 82, 58); 
+background-color: #fdcae180; 
+display:flex;
+}
+
+header h1{
+    margin-left: 30px;
+}
+.logo img{
+    
+    width: 85px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+
+
+img{ width: 100%;}
+
+
+.row{
+    flex-wrap:wrap;    
+    justify-content: center;
+    display: flex;
+    background-color: rgba(189, 84, 42, 0.925); ;
+
+
+
+}
+
+#row2{
+    flex-wrap:wrap;    
+    justify-content: center;
+    display: flex;
+    background-color: #fff;
+}
+.izquierda{
+    color: rgba(177, 70, 28, 0.897);
+    background-color: rgba(240, 190, 143, 0.356);
+    width: 80%;
+    
+    
+}
+/* .izquierda h2{
+    color: #ca1010;
+} */ /* verificar mejores colores  */
+
+.izquierda p{
+
+    font-size: 20px;
+    word-spacing: 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+}
+.derecha{
+ 
+     width: 20%;  
+     background-color: rgba(240, 190, 143, 0.356);
+     
+     
+}
+.derecha img{
+    border-radius: 5%;
+    width: 90%;
+    height: 95%;
+    margin-top: 10px;
+    margin-left: 15px;
+    box-shadow: 0px 0px 10px rgba(212, 141, 83, 0.918);
+}
+.derecha img:hover{
+    transform: scale(1.06);
+    transition: all 3s;
+}
+
+
+
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 4%; /* Proporción de aspecto (alto/ancho) */
+    overflow: hidden; /* Para asegurarse de que la imagen no sobresalga */
+    
+}
+
+
+
+.col img {
+    max-width: 100%; /* Asegura que las imágenes sean responsive */
+    height: auto;
+    display: block;
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+    align-content: center;
+}
+
+@media (max-width: 768px) {
+    .col {
+        flex: 0 0 calc(50% - 20px); /* Dos columnas en dispositivos más pequeños */
+    }
+}
+
+@media (max-width: 480px) {
+    .col {
+        flex: 0 0 calc(100% - 20px); /* Una columna en dispositivos aún más pequeños */
+    }
+}
+
+#col2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 4%; /* Proporción de aspecto (alto/ancho) */
+    overflow: hidden; /* Para asegurarse de que la imagen no sobresalga */
+}
+
+#col3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 4%; /* Proporción de aspecto (alto/ancho) */
+    overflow: hidden; /* Para asegurarse de que la imagen no sobresalga */
+}
+
+#col2 img{
+    max-width: 100%; /* Asegura que las imágenes sean responsive */
+    height: auto;
+    display: block;
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+#col3{
+    max-width: 100%; /* Asegura que las imágenes sean responsive */
+    height: auto;
+    display: block;
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+
+
+
+.derechados{
+    color: rgba(226, 133, 79, 0.897);
+    background-color:  rgb(255, 255, 255);
+    border-radius: 5%;
+    width: 60%;
+    height: 95%;
+    margin-top: 10px;
+    margin-left: 30px;
+    text-align: center;
+    margin-right: 30px;}
+
+    
+.derechados p{
+
+    word-spacing: 5px;
+    text-align:center;
+    margin-left: -10px;
+    margin-right: 1px;
+}
+
+
+
+.caja2 {
+    width: 100%; /* O ajusta el ancho según tus necesidades */
+    padding-top: 22%; /* Proporción de aspecto (alto/ancho) */
+    overflow: hidden; /* Para asegurarse de que la imagen no sobresalga */
+    padding-bottom: 22%;
+
+}
+    .caja2 h3{
+        text-align:center;
+        color: white;
+        margin-top: -52%;
+        margin-left: 30%;
+        font-size: 40px;
+        display: flex;
+        
+
+    }
+    .caja2 .pfdolar{
+        word-spacing: 10px;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        top: 56%;
+        left: 12%;
+        width: 250px;
+        height: auto;
+        display: block;
+
+        
+
+}
+    .caja2 .pfmoto{
+        word-spacing: 5px;
+        font-size: 20px;
+        color: white;
+        text-align: justify;
+        top: 56%;
+        left: 22%;
+        width: 250px;
+        height: auto;
+        display: block; 
+
+}
+.caja2 .pfescudo{
+        word-spacing: 5px;
+        font-size: 20px;
+        color: white;
+        text-align:justify;
+        top: 56%;
+        left: 72%;
+        width: 250px;
+        height: auto;
+        display: block; 
+
+}
+
+.caja2 .imagen1 {
+    max-width: 12%; /* Asegura que las imágenes sean responsive */
+    height: auto;
+    display: block;
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+    
+}
+
+    .caja2 .imagen2 {
+     max-width: 20%; /* Asegura que las imágenes sean responsive */
+    height: auto;
+    display: block;
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+        
+    
+    }    
+        .caja2 .imagen3 {
+            max-width: 20%; /* Asegura que las imágenes sean responsive */
+            height: auto;
+            display: block;
+            margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+            
+        }
+
+
+
+            
+            .derechatres{
+                color: rgba(226, 133, 79, 0.897);
+                background-color:  rgb(255, 255, 255);
+                width: 100%;
+                 
+                
+            }
+            .derechatres video{
+                
+                width  :40%;
+                margin-left: 0%;
+                
+            }
+            .izquierdatres{
+                color: rgba(189, 84, 42, 0.897);
+                background-color: rgb(255, 255, 255);
+                width: 70%;
+              
+            }
+
+            .izquierdatres .imgpc1{
+                position: relative;
+                width: 150px;
+                height: auto;
+                border-radius: 100%;
+                margin-top: 90px;
+                margin-left: 40px;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.808);
+            }
+
+            .izquierdatres .imgpc2{
+                position:relative;
+                width: 150px;
+                height: auto;
+                border-radius: 100%;
+                margin-top: 45px;
+                margin-left: 40px;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.808);
+            }
+            .derechatres .pflupa1{
+
+                word-spacing: 5px;
+                font-size: 10px;
+                color: rgba(224, 102, 20, 0.863);
+                text-align: center;
+                position: absolute;
+                top: 56%;
+                left: 45%;
+                width: 10px;
+                height: auto;
+                display: block; 
+
+
+            }
+
+
+            
+            
+ .caja3 {
+ position: relative;
+ width: 100%; /* O ajusta el ancho según tus necesidades */
+ padding-top: 54%; /* Proporción de aspecto (alto/ancho) */
+ background-color: rgba(189, 84, 42, 0.897);
+ overflow: hidden; /* Para asegurarse de que la imagen no sobresalga */
+ border-radius: 3%;
+  }
+
+
+  .caja3 h3{
+    word-spacing: 10px;
+    text-align: justify;
+    color: white;
+    margin-top: -52%;
+    margin-left: 37%;
+    font-size: 40px;
+}
+
+
+.pie-de-pagina {
+    background-color: #160802b2;
+    color: #fff;
+    padding: 20px ;
+    /* position: fixed; */
+    width: 100%;
+
+}
+
+.pie-de-pagina .contenedor {
+    padding-top: 26%; 
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   font-size: 20px;
+}
+
+.pie-de-pagina p {
+    margin: 0;
+}
+
+.pie-de-pagina nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.pie-de-pagina nav ul li {
+    margin-left: 30px;
+}
+
+.pie-de-pagina nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 15px;
+}
+
+.pie-de-pagina nav ul li a:hover {
+    color: #ddd;
+}
